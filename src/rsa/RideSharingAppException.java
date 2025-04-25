@@ -1,4 +1,4 @@
 package rsa;
 
-public class RideSharingAppException {
+public class RideSharingAppException extends Exception {
 }

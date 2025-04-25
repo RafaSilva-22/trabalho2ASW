@@ -1,4 +1,5 @@
 package rsa;
 
-public class Manager {
+public class Manager extends Object {
+
 }

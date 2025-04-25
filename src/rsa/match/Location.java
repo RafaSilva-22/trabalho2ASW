@@ -1,13 +1,10 @@
 package rsa.match;
 
-public class Location {
-    private final double x;
-    private final double y;
+import rsa.quad.HasPoint;
 
-    public Location(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
+public record Location(double x, double y) implements HasPoint {
+
+
 
     public double x() {
         return x;
@@ -16,17 +13,13 @@ public class Location {
         return y;
     }
 
-    public final int hashCode() {
+    public int hashCode() {
         return (int) (x * 31 + y);
     }
 
-    @Override
-    public final String toString() {
-        return super.toString();
-    }
-
-    public final boolean equals(Object o) {
+    public boolean equals(Object o) {
         if (this == o) return true;
         return o != null && getClass() == o.getClass();
     }
+
 }

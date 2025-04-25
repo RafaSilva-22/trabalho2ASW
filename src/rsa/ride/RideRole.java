@@ -10,6 +10,10 @@ public enum RideRole {
         this.role = passenger;
     }
 
+    public String getRole() {
+        return role;
+    }
+
     public RideRole other() {
         return this == DRIVER ? PASSENGER : DRIVER;
     }

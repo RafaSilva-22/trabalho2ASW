@@ -1,7 +1,7 @@
 package rsa.quad;
 
 public interface HasPoint {
-    double getX();
-    double getY();
+    double x();
+    double y();
 
 }

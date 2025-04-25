@@ -35,8 +35,10 @@ public class User {
     public String getKey() {
         return key;
     }
-    public String generateKey() {
+
+    String generateKey() {
         this.key = key;
+        return key;
     }
 
     public boolean authenticate(String key){
@@ -57,11 +59,11 @@ public class User {
     }
 
     public void addStars(UserStars stars, RideRole role) {
-
+        //falta completar
     }
 
     public float getAverage(RideRole role) {
-        return 0;
+        return 0; //falta completar
     }
 
 
